@@ -1,0 +1,23 @@
+pragma solidity ^0.8.0;
+
+contract calculator{
+    
+    uint public c;
+    
+    function add(uint a, uint b) public {
+       c=a+b;
+       return c;
+     }
+      
+      function sub(uint a, uint b) public {
+        c = a - b;
+        return c;
+    }
+
+      function mul(uint a, uint b) public {
+        c = a * b;
+        return c;
+        
+      }    
+        
+}
