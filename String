@@ -1,0 +1,15 @@
+pragma solidity ^0.8.0;
+
+//state variable
+//very expensive
+//string can't be compared
+//stored direvtly in -storage
+
+contract Strings{
+    
+    string public name;
+    function setName( string memory _name) public{
+        
+        name = _name;
+    }
+}
