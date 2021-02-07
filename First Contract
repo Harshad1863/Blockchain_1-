@@ -1,0 +1,29 @@
+pragma solidity ^0.8.0;  //define version
+
+//can be consideras class
+contract myfirstcontract{
+    
+      
+     //function
+     //function funcName(arg) accessModifiers { }
+       bool public flag=true;
+     //  int8 public integer8=type(x).max;
+     function toggle() public{
+         flag=!flag;
+     }
+     
+     uint public uinteger=type(uint).max;
+     
+     function sub(uint i) public {
+       unchecked  { uinteger = uinteger - i; }
+     }
+     
+     function add(uint i) public{
+       unchecked  { uinteger = uinteger + i; }
+     }
+     
+     
+     function greet() public view returns (string memory s) {
+         return "Hello World";
+     }
+}
