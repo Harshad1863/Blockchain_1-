@@ -1,0 +1,32 @@
+pragma solidity ^0.8.0;
+
+contract ABC{
+    
+    enum status {Rich,Poor}
+    status public SenderStatus;
+    status public tpStatus;
+    
+    address sender;
+    address tp;
+    
+    function checkStatus(address test) public{
+        
+        tp=test;
+        if(tp.balance ==100 ether){
+            tpStatus = status.Rich;
+        }else {
+            tpStatus = status.Poor;
+        }
+    }
+    
+    
+    function setstatus() public{
+        
+        if(sender.balance >= 99 ether){
+            SenderStatus=status.Rich;
+        }else {
+            SenderStatus = status.Poor;
+        }
+        
+    }
+}
