@@ -1,0 +1,40 @@
+pragma solidity ^0.6.0; 
+
+contract direction{
+    
+     int   x;
+     int   y;
+     
+     function  x_forward() public{
+         x++;
+     }
+     
+     function  x_backward() public{
+         x--;
+     }
+     
+     function  y_forward() public{
+         y++;
+     }
+     
+     function  y_backward() public{
+         y--;
+     }
+     
+    //  // getter for x
+    //  function getx() public view returns(int){
+    //      return x;
+    //  }
+     
+    //  //getter for y
+    //  function gety() public view returns(int){
+    //      return y;
+    //  }
+     
+     function getCoordinates() public view returns(int a,int b){
+         return (x,y);
+     } 
+     
+     
+     
+}
